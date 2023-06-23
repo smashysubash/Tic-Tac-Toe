@@ -1,13 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: #F8EFE8;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 22px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+h4 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+h5 {
+  margin-top: 0;
+  font-size: 14px;  
+}
+
+h6 {
+  margin-top: 0;
+  font-size: 12px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-size: 1.2em;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  padding: 0;
+  color: #A07D5C;
+}
+
+.square {
+  background: #F8EFE8;
+  border: 1px solid #A07D5C;
+  float: left;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 100px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}
+/* 
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
+} */
+
+.status {
+  margin-bottom: 10px;
+}
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+  padding-top: 15px;
+}
+
+.headcomp{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button{
+  color: #A07D5C;
+}
+
+.headcomp>h1{
+    color: #fff6a9;
+    font-family: 'Sacramento', cursive;
+    font-size: 64px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 20px auto 50px;
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    position: relative;
+    animation: animate 2s ease-in-out infinite;
+}
+@keyframes animate{
+    20%, 24%, 55%{
+        color: #111;
+        text-shadow: none;
+    }
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100%{
+        color: #fff6a9;
+        text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    }
+}
+@media only screen and (max-width: 990px){
+    .text-effect{ font-size: 100px; }
+}
+@media only screen and (max-width: 767px){
+    .text-effect{ font-size: 80px; }
+}
+@media only screen and (max-width: 479px){
+    .text-effect{ font-size: 60px; }
+}
+@media only screen and (max-width: 359px){
+    .text-effect{ font-size: 45px; }
+}
+
+
+.game-board{
+  font-size: 24px;
+}
+
+.status{
+  margin-bottom: 10px;
 }
