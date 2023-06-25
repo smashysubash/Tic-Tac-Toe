@@ -57,7 +57,9 @@ body {
   padding: 0;
   color: #A07D5C;
 }
-
+.board-row{
+  display: flex;
+}
 .square {
   background: #F8EFE8;
   border: 1px solid #A07D5C;
@@ -134,11 +136,13 @@ button{
     .text-effect{ font-size: 60px; }
     .game{ flex-direction: column;}
     .headcomp>h1{ font-size: 32px; }
+    .square{ width: 80px; height: 80px;}
 }
 @media only screen and (max-width: 359px){
     .text-effect{ font-size: 45px; }
     .game{ flex-direction: column;}
     .headcomp>h1{ font-size: 32px; }
+    .square{ width: 80px; height: 80px;}
 }
 
 
